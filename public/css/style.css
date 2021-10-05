@@ -73,6 +73,8 @@ h1 {
      
 }
 
+
+
 /* Grid & Page set up */
 
 .select-none {
@@ -121,4 +123,10 @@ h1 {
 }
 .col-12 {
     grid-column-end: span 12;
+}
+
+@media only screen and (max-width: 600px) {
+    .col-3 {
+        grid-column-end: span 12;
+    }
 }
