@@ -9,18 +9,18 @@ body {
 
 .grey-card {
     background-color: rgba(49, 49, 49, 0.5);
-    border: 4px double rgb(74, 151, 54);
+    border: 4px double grey;
     border-radius: 10px;
+    padding: 5px;
 }
 
 .header-container {
-    margin-top: 2px;
+    margin: 2px 1px;
     padding: 10px 0px 10px 10px;
     animation: borderAnim 6s alternate linear infinite;
 }
 
 h1 {
-    /* margin: 0 auto; */
     animation: typeText 2s steps(84);
     overflow: hidden;
     white-space: nowrap;
@@ -29,6 +29,20 @@ h1 {
 
 .blinking {
     animation: opacityAnim 1s infinite;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.nav-button {
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.nav-button:hover {
+    border: 4px double hsl(211, 70%, 50%);
+    background-color: rgba(49, 49, 49, 1);
 }
 
 @keyframes typeText {
@@ -70,7 +84,7 @@ h1 {
 .row{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 15px;
+    grid-gap: 2px;
 }
 .col-1 {
     grid-column-end: span 1;
